@@ -8,7 +8,7 @@ header {
 
 .info {
     width: 40%;
-    padding: 10rem 0rem 0rem 5rem;
+    padding: 15rem 0rem 0rem 5rem;
 }
 
 .contact_btn {
@@ -29,13 +29,15 @@ header {
     width: 680px;
     font-size: 66px;
     color: #158036;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     font-family: Lato;
 }
 
 .image {
     width: 880px;
-    height: 720px;
+    height: 100%;
+    width: 100%;
+    display: block;
 
 }
 
