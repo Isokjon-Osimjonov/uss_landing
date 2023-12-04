@@ -45,12 +45,12 @@ const Contact = () => {
         <div className="contact__options">
           <article onClick={handleEmailClick} className="contact__option">
             <h4 className="contact_title">Email</h4>
-            <h5 className="contact_ways">isoqjon2004@gmail.com</h5>
+            <h5 className="contact_ways">{emailAddress}</h5>
           </article>
 
           <article onClick={handleCall} className="contact__option">
             <h4 className="contact_title">Call</h4>
-            <h5 className="contact_ways">+998972700505</h5>
+            <h5 className="contact_ways">{phoneNumber}</h5>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
