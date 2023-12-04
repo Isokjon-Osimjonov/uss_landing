@@ -29,7 +29,7 @@ const Contact = () => {
     window.location.href = `tel:${phoneNumber}`;
   };
 
-  const emailAddress = "isoqjon2004@gmail.com";
+  const emailAddress = "ulkansardor@gmail.com";
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
