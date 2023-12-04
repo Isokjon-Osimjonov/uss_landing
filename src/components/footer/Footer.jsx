@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./footer.css";
 const Footer = () => {
-  const [setActiveNav] = useState("#home");
+  const [activeNav ,setActiveNav] = useState("#home");
 
   return (
     <section id="footer">

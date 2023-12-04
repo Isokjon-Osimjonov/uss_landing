@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./products.css";
 
 import i1 from "../../assets/1.jpg";
@@ -15,7 +15,7 @@ import Image8 from "../../assets/18.jpg";
 import Image9 from "../../assets/19.jpg";
 import Image10 from "../../assets/20.jpg";
 
-import {  Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -39,6 +39,7 @@ const Products = () => {
       image: i4,
     },
   ];
+  const [activeNav, setActiveNav] = useState("#home");
 
   return (
     <section id="products">
@@ -51,8 +52,17 @@ const Products = () => {
             condition to provide the best results for your health, undergoing
             natural purification and prolongation processes.
           </p>
-          <button className="cta-button">
-            <a href="#contact">Place an order</a>
+          <button
+            onClick={() => setActiveNav("#contact")}
+            className="cta-button"
+          >
+            <a
+              href="#contact"
+              onClick={() => setActiveNav("#contact")}
+              // className="cta-button"
+            >
+              Place an order
+            </a>
           </button>
         </div>
         <Swiper
